@@ -1,52 +1,463 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>❤ My website ❤</title>
-  </head>
-  <body>
-    <table cellspacing="20">
-        <td>  <img src= "pp1.png" alt="akash profile picture" > </td>
-        <td>  <h1> Akash Singh</h1>
-        <p> <em>Student At <strong><a href="https://www.bhu.ac.in/">Banaras Hindu University.</a> </strong></em></p>
-        <p> I am Student and also a Web Devloper ,and i love excercise.</p> </td>
-    </table>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>Akash Mohan Singh | Java Developer</title>
 
-<hr>
-<h3> Course and Degree </h3>
-<ul>
-<li> Bachelor degree in Computer Application</li>
-<li> O Level from NIELET</li>
-<li> Masters in Computer Application</li>
-<li> Coder in Coding School</li>
-</ul>
-<hr>
-<h3>Hobbies </h3>
-<ol>
-<li> Excercise in Jym</li>
-<li> Motorcycle</li>
-<li> Learning</li>
+  <style>
 
-</ol>
-<hr>
-<h3> Skills </h3>
-  <table cellspacing="10">
-<tr>
-<td>C language </td>
-<td> ⭐⭐⭐⭐</td>
-</tr>
-<tr>
-<td> Sql</td>
-<td> ⭐⭐⭐</td>
-</tr>
-  <tr>
-    <td>Web devlopment</td>
-    <td> ⭐⭐⭐</td>
-  </tr>
-</table>
-<hr>
-<strong> <a href="contactme.html"> Contact ME</a></strong>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
 
-  </body>
+    body{
+      background:#f5f7fb;
+      color:#222;
+      line-height:1.6;
+    }
+
+    .container{
+      width:90%;
+      max-width:1200px;
+      margin:auto;
+    }
+
+    header{
+      background:#0f172a;
+      color:white;
+      padding:60px 0;
+    }
+
+    .hero{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      flex-wrap:wrap;
+      gap:40px;
+    }
+
+    .hero img{
+      width:220px;
+      height:220px;
+      object-fit:cover;
+      border-radius:50%;
+      border:5px solid white;
+      box-shadow:0 5px 15px rgba(0,0,0,0.3);
+    }
+
+    .hero-text{
+      flex:1;
+    }
+
+    .hero-text h1{
+      font-size:48px;
+      margin-bottom:10px;
+    }
+
+    .hero-text h3{
+      font-size:24px;
+      color:#60a5fa;
+      margin-bottom:20px;
+    }
+
+    .hero-text p{
+      margin-bottom:10px;
+      font-size:18px;
+    }
+
+    .contact{
+      margin-top:20px;
+    }
+
+    .contact a{
+      color:white;
+      text-decoration:none;
+      display:block;
+      margin-bottom:8px;
+    }
+
+    section{
+      padding:60px 0;
+    }
+
+    .section-title{
+      font-size:34px;
+      margin-bottom:25px;
+      color:#0f172a;
+      border-bottom:4px solid #2563eb;
+      display:inline-block;
+      padding-bottom:5px;
+    }
+
+    .card{
+      background:white;
+      padding:30px;
+      border-radius:15px;
+      margin-bottom:25px;
+      box-shadow:0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .experience-item{
+      margin-bottom:30px;
+    }
+
+    .experience-item h3{
+      color:#2563eb;
+      margin-bottom:5px;
+    }
+
+    .experience-item h4{
+      margin-bottom:10px;
+      color:#444;
+    }
+
+    ul{
+      padding-left:20px;
+    }
+
+    ul li{
+      margin-bottom:10px;
+    }
+
+    .skills{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:20px;
+    }
+
+    .skill-box{
+      background:white;
+      padding:20px;
+      border-radius:12px;
+      box-shadow:0 3px 10px rgba(0,0,0,0.1);
+    }
+
+    .skill-box h4{
+      margin-bottom:10px;
+      color:#2563eb;
+    }
+
+    footer{
+      background:#0f172a;
+      color:white;
+      text-align:center;
+      padding:20px;
+    }
+
+    @media(max-width:768px){
+
+      .hero{
+        flex-direction:column;
+        text-align:center;
+      }
+
+      .hero-text h1{
+        font-size:38px;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+  <header>
+
+    <div class="container hero">
+
+      <img src="pp1.png" alt="Akash Mohan Singh">
+
+      <div class="hero-text">
+
+        <h1>Akash Mohan Singh</h1>
+
+        <h3>Software Engineer | Java | Spring Boot | Microservices</h3>
+
+        <p>
+          4 Years of experience building scalable backend systems,
+          REST APIs and enterprise applications using Java and Spring ecosystem.
+        </p>
+
+        <div class="contact">
+
+          <a href="tel:+916393566527">
+            📞 +91-6393566527
+          </a>
+
+          <a href="mailto:mohan.akash6789@gmail.com">
+            📧 mohan.akash6789@gmail.com
+          </a>
+
+          <a href="https://linkedin.com/in/akash-mohan-singh-2aa7b6188" target="_blank">
+            🔗 LinkedIn Profile
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <!-- SUMMARY -->
+
+  <section>
+
+    <div class="container">
+
+      <h2 class="section-title">Professional Summary</h2>
+
+      <div class="card">
+
+        <p>
+          Software Engineer with 4 years of experience in Java,
+          Spring Boot, and Microservices architecture, specializing
+          in scalable backend systems and RESTful APIs.
+        </p>
+
+        <br>
+
+        <p>
+          Experienced in Hibernate/JPA, SQL (MySQL/PostgreSQL),
+          AWS, Spring Integration, multithreading, system design,
+          API integration and performance optimization.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- EXPERIENCE -->
+
+  <section>
+
+    <div class="container">
+
+      <h2 class="section-title">Experience</h2>
+
+      <div class="card experience-item">
+
+        <h3>Senior Software Engineer</h3>
+
+        <h4>Accenture | Jan 2025 - Present</h4>
+
+        <ul>
+
+          <li>
+            Implemented token-based authentication and caching for vendor APIs.
+          </li>
+
+          <li>
+            Worked on ALIP platform using Spring Integration flows.
+          </li>
+
+          <li>
+            Resolved complex bugs involving Java multithreading and integrations.
+          </li>
+
+          <li>
+            Automated API documentation and log analysis using Agentic AI workflows.
+          </li>
+
+          <li>
+            Used AWS S3, Dynatrace and Azure Logs for monitoring and storage.
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="card experience-item">
+
+        <h3>Full Stack Engineer</h3>
+
+        <h4>Vinculum Solution Pvt Ltd | Aug 2022 - Dec 2024</h4>
+
+        <ul>
+
+          <li>
+            Developed E-retail software using Java, JPA, JavaScript and MySQL.
+          </li>
+
+          <li>
+            Engineered billing APIs reducing payment errors by 40%.
+          </li>
+
+          <li>
+            Designed and optimized 15+ REST APIs improving response time.
+          </li>
+
+          <li>
+            Developed shipment tracking integrations for Nykaa.
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="card experience-item">
+
+        <h3>Software Developer Intern</h3>
+
+        <h4>Vinculum Solution Pvt Ltd | Feb 2022 - Jul 2022</h4>
+
+        <ul>
+
+          <li>
+            Developed inventory management features.
+          </li>
+
+          <li>
+            Created REST APIs using Java and Struts 2.0.
+          </li>
+
+          <li>
+            Designed UI components using HTML, CSS, JavaScript and JSP.
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- EDUCATION -->
+
+  <section>
+
+    <div class="container">
+
+      <h2 class="section-title">Education</h2>
+
+      <div class="card">
+
+        <h3>Banaras Hindu University (BHU)</h3>
+
+        <p>
+          MCA - Master of Computer Applications
+        </p>
+
+        <p>
+          2019 - 2022 | CGPA: 8.0
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- PROJECTS -->
+
+  <section>
+
+    <div class="container">
+
+      <h2 class="section-title">Projects</h2>
+
+      <div class="card">
+
+        <h3>Car Rental System</h3>
+
+        <br>
+
+        <p>
+          Technologies: Struts, JPA, Java, MySQL, HTML, CSS
+        </p>
+
+        <br>
+
+        <ul>
+
+          <li>
+            Developed complete car rental booking system.
+          </li>
+
+          <li>
+            Implemented authentication and admin management.
+          </li>
+
+          <li>
+            Built REST APIs for booking functionality.
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- SKILLS -->
+
+  <section>
+
+    <div class="container">
+
+      <h2 class="section-title">Technical Skills</h2>
+
+      <div class="skills">
+
+        <div class="skill-box">
+          <h4>Programming</h4>
+          <p>Java, SQL, JavaScript, HTML, CSS, jQuery</p>
+        </div>
+
+        <div class="skill-box">
+          <h4>Backend</h4>
+          <p>Spring Boot, Spring MVC, Hibernate, JPA, Struts 2.0</p>
+        </div>
+
+        <div class="skill-box">
+          <h4>Cloud & DevOps</h4>
+          <p>AWS, Azure, Dynatrace, CI/CD, Swagger, Postman</p>
+        </div>
+
+        <div class="skill-box">
+          <h4>Messaging & APIs</h4>
+          <p>Kafka, SOAP, REST APIs, XSLT, XSD, XML, JSON</p>
+        </div>
+
+        <div class="skill-box">
+          <h4>Tools</h4>
+          <p>Git, GitHub, SVN, Jira, Eclipse, MySQL Workbench</p>
+        </div>
+
+        <div class="skill-box">
+          <h4>AI Automation</h4>
+          <p>Agentic AI workflows, API documentation automation</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <p>
+      © 2026 Akash Mohan Singh | Portfolio Website
+    </p>
+
+  </footer>
+
+</body>
 </html>
